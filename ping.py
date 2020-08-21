@@ -61,7 +61,8 @@ def do_scan(target_ip, thread_num):
 
 #ping 网段内所有ip
 if __name__ == '__main__':
-    #print(ping("192.168.199.1/24"))
-    do_scan("192.168.199.1/24" ,64)
+    print("请输入ip地址" , "192.168.199.1/24")
+    ip = input()
+    do_scan(ip ,1)
 
 '''sudo python ping.py'''

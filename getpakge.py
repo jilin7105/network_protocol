@@ -16,6 +16,7 @@ def get_packet(iface,type,filter =''):
     dpkt = sniff(filter=filter, iface=iface, prn=lambda x: x.summary(), count=10)
 
     if type == "1" :
+        time.sleep(2)
         get_packet(iface, type, filter)
 
 
